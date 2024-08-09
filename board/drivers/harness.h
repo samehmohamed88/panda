@@ -114,6 +114,7 @@ uint8_t harness_detect_orientation(void) {
 
 void harness_tick(void) {
   harness.status = harness_detect_orientation();
+  // print("detected car harness with orientation "); puth2(harness.status); print("\n");
 }
 
 void harness_init(void) {
